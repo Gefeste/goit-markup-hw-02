@@ -2,13 +2,16 @@
   --button-color: #2196f3;
   --headline-color: #212121;
   --text-color: #757575;
-  --bcg-cl: #f5f5f5;
+  --main-cl: #FFFFFF;
+  --section-bg-cl: #2F303A;
+  --nav-logo-cl: #000000;
+  --bcg-btn-cl: #f5f4fa;
 }
 
 body {
-  background-color: var(--bcg-cl);
+  background-color: var(--main-cl);
   color: var(--text-color);
-  font-family: 'Roboto', 'Times New Roman', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -33,12 +36,11 @@ ul {
 }
 
 .nav-logocolor {
-  color: #000000;
+  color: var(--nav-logo-cl);
 }
 
 .nav-link {
   color: var(--headline-color);
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -70,9 +72,12 @@ ul {
 
 /* Головна */
 
+.hero-section {
+  background-color: var(--section-bg-cl);
+}
+
 h1 {
-  background-color: #2f303a;
-  color: #ffffff;
+  color: var(--main-cl);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -82,7 +87,7 @@ h1 {
 }
 
 .button-order {
-  color: #ffffff;
+  color: var(--main-cl);
   background-color: var(--button-color);
   font-family: 'Roboto';
   font-weight: 700;
@@ -110,7 +115,6 @@ h1 {
 
 h2 {
   color: var(--headline-color);
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -154,7 +158,7 @@ h2 {
 }
 
 .footer-logocolor {
-  color: #ffffff;
+  color: var(--main-cl);
 }
 
 .footer .adress-list {
@@ -166,7 +170,7 @@ h2 {
 }
 
 .footer-map-contact {
-  color: #ffffff;
+  color: var(--main-cl);
 }
 
 .footer-map-contact:hover,
@@ -186,8 +190,9 @@ h2 {
 /* Portfolio.html */
 
 .radio-button {
+  font-family: inherit;
   color: var(--headline-color);
-  background-color: #f5f4fa;
+  background-color: var(--bcg-btn-cl);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -199,7 +204,7 @@ h2 {
 
 .radio-button:hover,
 .radio-button:focus {
-  color: #ffffff;
+  color: var(--main-cl);
   background-color: var(--button-color);
 }
 
